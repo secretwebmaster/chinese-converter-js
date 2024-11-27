@@ -48,10 +48,12 @@ Chinese-Converter.js 用於在網頁上實現繁體中文與簡體中文的即�
 若需要更改默認設置，例如按鈕文本或默認語言，可以直接修改以下變數：
 
 ```javascript
-var defaultEncoding = 2; // 默認語言：1-繁體中文，2-簡體中文
-var msgToTraditionalChinese = "切換至繁體";
-var msgToSimplifiedChinese = "切換至簡體";
-var translateButtonId = "customTranslateLink"; // 自訂按鈕 ID
+var defaultEncoding = 1; // 預設語言: 繁體=1 簡體=2
+var translateDelay = 0; // 延遲轉換時間(毫秒)
+var cookieDomain = "https://wntheme.com"; // 修改為您的網站地址
+var msgToTraditionalChinese = "切換至繁體"; // 簡轉繁時顯示的文字
+var msgToSimplifiedChinese = "切换至简体"; // 繁轉簡時顯示的文字
+var translateButtonId = "translateLink"; // 轉換按鈕的id
 ```
 
 ### 5. 完整範例
